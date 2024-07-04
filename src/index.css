@@ -8,3 +8,25 @@
     margin: 0;
     padding: 0;
 }
+
+.hero.gradient-to-black {
+    position: relative;
+}
+
+.hero.gradient-to-black::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent,black 80%, black 100%);
+}
+
+.relative {
+    position: relative;
+  }
+  
+  .absolute {
+    position: absolute;
+  }

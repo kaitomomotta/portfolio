@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <main className='full-window dark text-foreground bg-background'>
+    <main className='dark text-foreground bg-background'>
       <App />
     </main>
   </React.StrictMode>,
