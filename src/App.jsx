@@ -1,19 +1,19 @@
-import { NextUIProvider } from "@nextui-org/react"
+import { Link } from "@nextui-org/react"
 import React from "react"
-import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
 
 function App() {
-  const navigate = useNavigate();
   return (
-    <NextUIProvider navigate={navigate}>
-      <Routes>
-        <Route path="/portfolio" element={<h1>Hello World</h1>}/>
-        <Route path="/portfolio/me" element={<h1>Me</h1>}/>
-      </Routes>
-      <h1 className="text-3xl font-bold underline">
-        main website
+    <div className="text-center py-10">
+      <h1 className="py-5 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        Abel Roinsard
       </h1>
-    </NextUIProvider>
+      Welcome to my website !
+
+      <div className="pt-20">
+          <Link isExternal href="/portfolio/cv.pdf">Download my CV</Link>
+      </div>
+    </div>
   )
 }
 
