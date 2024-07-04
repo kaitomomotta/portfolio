@@ -20,7 +20,7 @@ function App() {
         <div className="py-5 "><h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
           Abel Roinsard
         </h1>
-        <div className="text-center">アベル</div>
+        <div className="text-center text-gray-600">アベル</div>
         </div>
         <div className="text-center font-bold leading-loose">🇫🇷 EPITA 2026 promotion<br/>🇯🇵 芝浦⼯業⼤学 exchange student</div>
       </div>
@@ -33,6 +33,10 @@ function App() {
           </CardBody>
         </Card>
       </div>
+
+      <Divider />
+
+      <div className="pt-5"/>
 
       <Socials />
     </>
