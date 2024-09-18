@@ -1,12 +1,15 @@
-import { Card, CardBody, Divider, Link, Image } from "@nextui-org/react"
+import {Card, CardBody, Divider, Link} from "@nextui-org/react"
 import React from "react"
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
 
 import Socials from "./components/Socials"
 
 import './index.css'
 
 import hero from './assets/hero.jpg'
+import Projects from "./components/Projects.jsx";
+import Art from "./components/Art.jsx";
+import Footer from "./components/Footer.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 
 function App() {
   return (
@@ -14,15 +17,17 @@ function App() {
       <div>
         <header>
           <div className="hero gradient-to-black">
-            <img src={hero} />
+            <img src={hero}/>
           </div>
         </header>
-        <div className="py-5 "><h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+        <div className="py-5 "><h1
+          className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
           Abel Roinsard
         </h1>
-        <div className="text-center text-gray-600">アベル</div>
+          <div className="text-center text-gray-600">アベル</div>
         </div>
-        <div className="text-center font-bold leading-loose">🇫🇷 EPITA 2026 promotion<br/>🇯🇵 芝浦⼯業⼤学 exchange student</div>
+        <div className="text-center font-bold leading-loose">🇫🇷 EPITA 2026 promotion<br/>🇯🇵 芝浦⼯業⼤学 exchange student
+        </div>
       </div>
 
 
@@ -34,11 +39,31 @@ function App() {
         </Card>
       </div>
 
-      <Divider />
+      <Divider/>
 
-      <div className="pt-5"/>
+      <div className="pt-10 pb-10 justify-center">
+        <Socials/>
+      </div>
 
-      <Socials />
+      <Divider/>
+
+      <div className="pt-10 pb-10 justify-center">
+        <AboutMe/>
+      </div>
+
+      <Divider/>
+
+      <div className="pt-10 pb-10 justify-center">
+        <Art/>
+      </div>
+
+      <Divider/>
+
+      <div className="pt-10 pb-10 justify-center">
+        <Projects/>
+      </div>
+
+      <Footer/>
     </>
   )
 }
