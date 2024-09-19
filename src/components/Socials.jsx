@@ -10,13 +10,14 @@ export default function Socials() {
     const github_url = "https://github.com/kaitomomotta";
     const instagram_url = "https://www.instagram.com/abel.art_/";
     const spotify_url = "https://open.spotify.com/user/abroins?si=08c066380a24459b";
+    const hoverClass = "hover:bg-slate-800"
     return (
         <>
             <h1 className="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white text-center pb-10">
                 💬 Socials 📱
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-1/2 mx-auto">
-                <Card isPressable onPress={() => window.open(linkedin_url)}>
+                <Card isPressable onPress={() => window.open(linkedin_url)} className={hoverClass}>
                     <CardHeader className="flex">
                         <Image
                             alt="Linkedin icon"
@@ -32,7 +33,7 @@ export default function Socials() {
                     </CardHeader>
                 </Card>
 
-                <Card isPressable onPress={() => window.open(github_url)}>
+                <Card isPressable onPress={() => window.open(github_url)} className={hoverClass}>
                     <CardHeader className="flex">
                         <Image
                             alt="GitHub icon"
@@ -48,7 +49,7 @@ export default function Socials() {
                     </CardHeader>
                 </Card>
 
-                <Card isPressable onPress={() => window.open(instagram_url)}>
+                <Card isPressable onPress={() => window.open(instagram_url)} className={hoverClass}>
                     <CardHeader className="flex">
                         <Image
                             alt="Instagram icon"
@@ -64,7 +65,7 @@ export default function Socials() {
                     </CardHeader>
                 </Card>
 
-                <Card isPressable onPress={() => window.open(spotify_url)}>
+                <Card isPressable onPress={() => window.open(spotify_url)} className={hoverClass}>
                     <CardHeader className="flex">
                         <Image
                             alt="Spotify icon"
