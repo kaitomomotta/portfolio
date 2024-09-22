@@ -13,7 +13,7 @@ export default function Socials() {
     const hoverClass = "hover:bg-slate-800"
     return (
         <>
-            <h1 className="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white text-center pb-10">
+            <h1 className="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white text-center pb-5">
                 💬 Socials 📱
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-1/2 mx-auto">
