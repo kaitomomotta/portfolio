@@ -5,6 +5,7 @@ const theme = createTheme({
     primary: {
       white: "#FFFFFF",
       black: "#1E1E1E",
+      background: "#EEE"
     },
     secondary: {
       accent: "#B892FF",

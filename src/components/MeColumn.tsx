@@ -1,6 +1,7 @@
 import {Box, styled} from "@mui/system";
+import CVButton from "./ui_verse/CVButton.tsx";
 
-const Text = styled(Box)(({ theme }) => ({
+const Text = styled(Box)(({theme}) => ({
   color: theme.palette.secondary.accent2Dark,
 }));
 
@@ -14,19 +15,19 @@ const Subtitle = styled(Text)({
   fontWeight: '800'
 });
 
-const Link = styled('a')(({ theme }) => ({
-  color: theme.palette.secondary.accent2Dark,
-  fontWeight: '600'
-}));
+const CV = styled(Box)({
+  padding: '24px',
+});
 
 export default function MeColumn() {
-  return(
-      <>
-        <Title>abel</Title>
-        <Subtitle>computer science student</Subtitle>
-        <Text>Epita 4th student - MTI major</Text>
-        <Text>芝浦工業大学 exchange student</Text>
-        <Link href='/portfolio/cv.pdf'>Download my CV {'>'}</Link>
-      </>
+  return (
+    <>
+      <Title>abel</Title>
+      <Subtitle>computer science student</Subtitle>
+      <Text>Epita 4th student - MTI major</Text>
+      <Text>芝浦工業大学 exchange student</Text>
+      <CV><CVButton/>
+      </CV>
+    </>
   );
 }
