@@ -1,0 +1,20 @@
+.wrapper {
+  //background: aqua;
+  width: 300px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Fugaz One', sans-serif;
+  margin: 0;
+  color: #7BE4D4;
+}
+h2, h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
